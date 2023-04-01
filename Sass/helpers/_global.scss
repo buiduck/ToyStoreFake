@@ -1,5 +1,11 @@
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:active,
+a:hover {
+    color: $hover-color;
 }
 
 img {
@@ -11,13 +17,20 @@ img {
 body {
     line-height: 1;
     font-size: 1.6rem;
+    font-family: $primary-font;
 }
 
 input,
 button {
+    font-family: $primary-font;
     outline: none;
 }
 
 button {
+    cursor: pointer;
+}
+
+i {
+    font-size: 2rem;
     cursor: pointer;
 }

@@ -1,0 +1,188 @@
+.header {
+    box-shadow: 3px 1px 6px 3px rgba(0, 0, 0, 0.1);
+    @include size(100%, 7rem);
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+
+    @include flexbox();
+
+
+    &-item {
+        width: calc(100% / 3);
+        height: 100%;
+    }
+
+    &-logo {
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    &-contact {
+        height: 100%;
+        cursor: pointer;
+        @include flexbox(center, flex-start);
+
+        i {
+            @include size(3.5rem);
+            border-radius: 100%;
+            color: white;
+            background-color: #000;
+            @include flexbox(center, center);
+            margin-right: 2rem;
+        }
+    }
+
+    &-contact:hover {
+        color: $hover-color;
+
+        i {
+            background-color: $hover-color;
+        }
+    }
+
+    &-control {
+        height: 100%;
+        @include flexbox(center, flex-end);
+
+    }
+
+    &-icon {
+        cursor: pointer;
+        font-size: 3rem;
+        color: rgba(black, 0.9);
+        font-weight: bold;
+        margin-left: 3rem;
+    }
+
+    &-icon:hover {
+        color: $hover-color;
+    }
+
+    &-icon:last-child {
+        position: relative;
+
+        &::after {
+            content: "0";
+            @include size(2rem);
+            border-radius: 100%;
+            font-size: 1rem;
+            @include flexbox(center, center);
+            color: white;
+
+            background-color: $hover-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -20%);
+        }
+    }
+}
+
+.menu {
+    @include size(120rem, 5rem);
+    margin: 0 auto;
+
+    &-list {
+        @include flexbox(center, center);
+        height: 100%;
+    }
+
+    &-item {
+        height: 100%;
+        width: calc(100% / 6);
+        @include flexbox(center, center);
+        font-weight: 500;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+
+        position: relative;
+    }
+
+    &-arrow {
+        font-size: 1.2rem;
+        padding-left: 0.5rem;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: all .25s linear;
+
+    }
+
+    &-link {
+        cursor: pointer;
+        transition: all .25s linear;
+    }
+
+    &-item:hover {
+        .menu-arrow {
+            visibility: visible;
+            opacity: 1;
+            color: $hover-color;
+        }
+
+        .menu-link {
+            color: $hover-color;
+        }
+
+
+        position: relative;
+    }
+
+    &-sub {
+        @include size(100%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        padding-right: 1rem;
+        z-index: 2;
+
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: all .25s linear;
+    }
+
+    &-sub-link {
+        color: black;
+        transition: all 0.25s linear;
+    }
+
+    &-sub-item {
+        padding: 1rem 1.5rem;
+        margin-left: 3.5rem;
+        background-color: #fff;
+    }
+
+    &-item:hover .menu-sub {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+//slick slider custom
+.slick-arrow {
+    color: red;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    @include size(4rem);
+    border: none;
+    color: black;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.slick-prev {
+    left: 0;
+    transform: translateX(-2rem);
+
+}
+
+.slick-next {
+    right: 0;
+    transform: translateX(2rem);
+
+}

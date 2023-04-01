@@ -5,17 +5,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./reset.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="./styles.css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsam, commodi enim beatae consectetur
-        possimus hic eveniet temporibus eaque, magni, alias autem labore aspernatur dicta cum impedit blanditiis
-        voluptatem veritatis.</p>
-    <h2>Title 2 test</h2>\
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, odit!</p>
+    <div class="wrapper">
+        <section class="top-bar">
+            <div class="container">
+                <header class="header">
+                    <div class="header-item">
+                        <div class="header-contact">
+                            <i class="fa fa-phone"></i>
+                            <span class="header-contact-phone">Hỗ trợ: 0123 456 789</span>
+                        </div>
+                    </div>
+                    <div class="header-item">
+                        <a href="#"><img src="./Images/logo.png" alt="" class="header-logo"></a>
+                    </div>
+                    <div class="header-item">
+                        <div class="header-control">
+                            <i class="header-icon fas fa-search"></i>
+                            <i class="header-icon fas fa-user"></i>
+                            <i class="header-icon fas fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </section>
+
+        <section class="top-nav">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Marvel/DC</a>
+                            <i class="menu-arrow fa fa-angle-down"></i>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Vũ khí tối thượng
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Mặt nạ
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Đồ công nghệ
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Tượng marvel store
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Tượng 1/2, 1/1
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Manga/Anime</a>
+                            <i class="menu-arrow fa fa-angle-down"></i>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Dragon Ball
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Naruto
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        One Piece
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Theo phim</a>
+                            <i class="menu-arrow fa fa-angle-down"></i>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Vũ khí tối thượng
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Mặt nạ
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Đồ công nghệ
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Tượng marvel store
+                                    </a>
+                                </li>
+                                <li class="menu-sub-item">
+                                    <a href="#" class="menu-sub-link">
+                                        Tượng 1/2, 1/1
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Chỉ dẫn mua hàng</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="top-slider">
+            <div class="container">
+                <div class="slider-list">
+                    <div class="slider-item">
+                        <img class="slider-image" src="./Images/slider1.jpg" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img class="slider-image" src="./Images/slider2.jpg" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img class="slider-image" src="./Images/slider3.jpg" alt="">
+                    </div>
+                </div>
+                <i class="menu-arrow fa fa-angle-down" style="color: re;"></i>
+            </div>
+        </section>
+    </div>
+    
+    <section class="product">
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./Script/main.js"></script>
 </body>
 
 </html>
