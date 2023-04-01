@@ -1,0 +1,4 @@
+@function extend($obj,$ext-obj)
+{
+    @return map-merge($map1: $obj, $map2: $ext-obj);
+}

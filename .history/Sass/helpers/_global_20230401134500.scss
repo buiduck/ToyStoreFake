@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+body {
+    line-height: 1;
+    font-size: 1.6rem;
+}
+
+input,
+button {
+    font-family: $primary-font;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
