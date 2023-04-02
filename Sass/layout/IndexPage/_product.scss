@@ -1,0 +1,138 @@
+.product {
+    padding: 0.5rem 20rem;
+    margin: 0 auto;
+
+    &-header {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+
+        &::before {
+            content: "";
+            @include size(100%, 0.1rem);
+            background-color: black;
+
+            position: absolute;
+            top: 46%;
+            transform: translateY(-50%);
+            left: 0;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            @include size(100%, 0.1rem);
+            background-color: black;
+
+            position: absolute;
+            top: 54%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: -1;
+
+
+        }
+    }
+
+    &-header-title {
+        font-weight: bold;
+        font-size: 3rem;
+
+    }
+
+    &-header-desc {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+
+    &-list {
+        @include flexbox(stretch, flex-start, row, wrap);
+        margin-right: -3rem;
+
+    }
+
+    &-item {
+        margin-right: 3rem;
+        width: calc(100% /4 - 3rem);
+        box-shadow: 3px 1px 6px 3px rgba(0, 0, 0, 0.1);
+        padding: 0 1rem 1rem;
+        margin-bottom: 2rem;
+
+        position: relative;
+
+        @include flexbox(flex-start, flex-start, column);
+    }
+
+    &-item-title {
+        margin: 2rem 0;
+    }
+
+    &-item-price {
+        color: $price-color;
+        margin-top: auto;
+        padding-left: 1rem;
+        display: block;
+        width: 100%;
+        padding-top: 1rem;
+        border-top: 1px solid #00000018;
+
+    }
+
+    &-item-image {
+        height: 27rem;
+        // z-index: -1;
+        transition: transform .25s linear;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+    }
+
+    &-item-link {
+        @include textClamp(2);
+    }
+
+    &-item-status {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 2;
+    }
+
+    &-item-discount {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        @include size(4rem);
+        font-size: 1.4rem;
+        color: white;
+        background-color: $hover-color;
+        @include flexbox(center, center);
+        border-radius: 100%;
+
+    }
+
+    &-all {
+        display: block;
+        margin: 0 auto;
+        width: 16rem;
+        font-size: 1.8rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        color: white;
+        background-color: $hover-color;
+        border: 1px solid transparent;
+        transition: all .25s linear;
+
+        &:hover {
+            color: $hover-color;
+            background-color: white;
+            border-color: $hover-color;
+        }
+    }
+
+}

@@ -1,0 +1,68 @@
+.footer {
+    background-color: $footer-bg-color;
+
+    &-container {
+
+        margin-top: 2rem;
+
+        padding: 3rem 20rem;
+        @include flexbox();
+        margin-right: -2rem;
+        color: white;
+    }
+
+    &-column {
+        width: calc(100% /4 - 2rem);
+        margin-right: 2rem;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        position: relative;
+
+        &:before {
+            content: "";
+            @include size(4rem, 2px);
+            background-color: $hover-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-link {
+        color: white;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    &-info {
+        margin-bottom: 1rem;
+    }
+
+    &-social-list {
+        @include flexbox();
+        margin-right: -2rem;
+    }
+
+    &-social-item {
+        margin-right: 1rem;
+        @include size(3.5rem);
+        background-color: #fff;
+        color: black;
+        border-radius: 100%;
+        @include flexbox(center, center);
+    }
+
+    &-credit {
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.281);
+        font-size: 1.2rem;
+    }
+}

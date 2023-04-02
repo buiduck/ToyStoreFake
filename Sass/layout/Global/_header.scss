@@ -1,0 +1,79 @@
+.header {
+    box-shadow: 3px 1px 6px 3px rgba(0, 0, 0, 0.1);
+    @include size(100%, 7rem);
+    margin: 0 auto;
+    padding: 0.5rem 20rem;
+
+    @include flexbox();
+
+
+    &-item {
+        width: calc(100% / 3);
+        height: 100%;
+    }
+
+    &-logo {
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    &-contact {
+        height: 100%;
+        cursor: pointer;
+        @include flexbox(center, flex-start);
+
+        i {
+            @include size(3.5rem);
+            border-radius: 100%;
+            color: white;
+            background-color: #000;
+            @include flexbox(center, center);
+            margin-right: 2rem;
+        }
+    }
+
+    &-contact:hover {
+        color: $hover-color;
+
+        i {
+            background-color: $hover-color;
+        }
+    }
+
+    &-control {
+        height: 100%;
+        @include flexbox(center, flex-end);
+
+    }
+
+    &-icon {
+        cursor: pointer;
+        font-size: 3rem;
+        color: rgba(black, 0.9);
+        font-weight: bold;
+        margin-left: 3rem;
+    }
+
+    &-icon:hover {
+        color: $hover-color;
+    }
+
+    &-icon:last-child {
+        position: relative;
+
+        &::after {
+            content: "0";
+            @include size(2rem);
+            border-radius: 100%;
+            font-size: 1rem;
+            @include flexbox(center, center);
+            color: white;
+
+            background-color: $hover-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -20%);
+        }
+    }
+}

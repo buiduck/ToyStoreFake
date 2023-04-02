@@ -1,0 +1,40 @@
+//slick slider custom
+.slick-arrow {
+    color: red;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    @include size(4rem);
+    border: none;
+    color: black;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.slick-prev {
+    left: 0;
+    transform: translateX(-2rem);
+
+}
+
+.slick-next {
+    right: 0;
+    transform: translateX(2rem);
+
+}
+
+//trick
+.line-text {
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
+
+@import "../Global/header";
+@import "../Global/menu";
+@import "../Global/ontopButton";
+@import "../Global/footer";
+@import "./product";
