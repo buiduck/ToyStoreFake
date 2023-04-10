@@ -149,10 +149,10 @@ i {
 .header-icon:hover {
   color: #58b3f0;
 }
-.header-icon:last-child {
+.header-icon-count {
   position: relative;
 }
-.header-icon:last-child::after {
+.header-icon-count::after {
   content: "0";
   width: 2rem;
   height: 2rem;
