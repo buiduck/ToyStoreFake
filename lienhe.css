@@ -226,7 +226,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 #lienhe-content{
-    background-color: #e4f2ed;
+    background-color: #e7f0ed;
 }
 
 .row{
@@ -355,7 +355,7 @@ textarea {
     background-color: #1c2632;
   }
   .footer-container {
-    margin-top: 2rem;
+    margin-top: 0.4rem;
     padding: 3rem 20rem;
     display: flex;
     align-items: stretch;
