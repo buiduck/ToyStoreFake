@@ -1,7 +1,7 @@
 .box-body {
     display: grid;
     place-items: center;
-    background: url(/Images/slider2.jpg) no-repeat;
+    background: url(/Images/slider2.jpg) no-repeat center center / cover;
     margin-bottom: 10px;
     height: 55rem;
 }

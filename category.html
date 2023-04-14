@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="./styles.css">
+
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./stylelogin.css">
-    <link rel="stylesheet" href="../../styles.css">
 </head>
+
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
     <section class="top-bar">
         <div class="container">
             <header class="header">
@@ -21,25 +33,25 @@
                     </div>
                 </div>
                 <div class="header-item">
-                    <a href="#"><img src="./Images/logo.png" alt="" class="header-logo"></a>
+                    <a href="./index.html"><img src="./Images/logo.png" alt="" class="header-logo"></a>
                 </div>
                 <div class="header-item">
                     <div class="header-control">
                         <i class="header-icon fas fa-search"></i>
-                        <i class="header-icon fas fa-user"></i>
-                        <i class="header-icon fas fa-shopping-bag"></i>
+                        <a href="#"> <i class="header-icon fas fa-user"></i></a>
+                        <i class="header-icon header-icon-count fas fa-shopping-bag"></i>
                     </div>
                 </div>
             </header>
         </div>
     </section>
-    
+
     <section class="top-nav">
         <div class="container">
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a class="menu-link" href="#">Trang chủ</a>
+                        <a class="menu-link" href="./index.html">Trang chủ</a>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="#">Marvel/DC</a>
@@ -91,9 +103,9 @@
                                     One Piece
                                 </a>
                             </li>
-    
+
                         </ul>
-    
+
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="#">Theo phim</a>
@@ -132,33 +144,77 @@
                     <li class="menu-item">
                         <a class="menu-link" href="#">Liên hệ</a>
                     </li>
-                </ul> 
-                </nav>
+                </ul>
+            </nav>
         </div>
     </section>
-    <div class="box-body">
-        <div class="box-login">
-            <label id="title" for="">Đăng nhập</label>
-            <div class="box-input">
-                <input type="text" value="" placeholder="Email">
-                <input type="password" name="" id="" placeholder="Mật khẩu">
-                <a href="#">Quên mật khẩu?</a>
-            </div>
-            <div class="login">
-                <a href="#">ĐĂNG NHẬP</a>
-            </div>
-            <label for="">Đăng nhập với tài khoản</label>
-            <div class="box-icon">
-                <a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                <a href=""><i class="fab fa-google-plus-g    "></i></a>
-                <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            </div>
-            <div class="box-sigup">
-                <label for="">Chưa có tài khoản?</label>
-                <a href="./sigup.html">Đăng ký ngay</a>
-            </div>
-        </div>
+
+    <!-- Code here :> -->
+    <div class="container">
+        <section class="category">
+            <div class="category-menu">
+                <div class="category-menu-title">
+                    <h2 class="category-menu-text">Danh mục nhóm</h2>
+                    <i class="fa fa-minus category-menu-icon1"></i>
+                </div>
+                <ul class="category-menu-list">
+
+                    <li class="category-menu-item">
+                        <a href="#" class="category-menu-link">Manga/Anime</a>
+                        <!-- <ul>
+                            <li>Naruto</li>
+                            <li>One Piece</li>
+                            <li>Dragon Ball</li>
+                            <li>Black Clover</li>
+                        </ul> -->
+                    </li>
+                    <li class="category-menu-item">
+                        <a href="#" class="category-menu-link">Manga/Anime</a>
+                    </li>
+                </ul>
+
+
+                <div class="category-menu-title">
+                    <h2 class="category-menu-text">Giá</h2>
+                    <i class="fa fa-minus category-menu-icon2"></i>
+
+                    <!-- <i class="fa fa-minus"></i> -->
+                </div>
+
+                <div class="category-menu-option">
+                    <div class="category-option-item">
+                        <input type="radio" class="category-menu-radio" name="rdoPrice" id="rdo1">
+                        <label class="category-menu-label" for="rdo1">Nhỏ hơn 1,000,000₫</label><br>
+                    </div>
+                    <div class="category-option-item">
+
+                        <input type="radio" class="category-menu-radio" name="rdoPrice" id="rdo2">
+                        <label class="category-menu-label" for="rdo2">Từ 1,000,000₫ - 2,000,000₫</label><br>
+                    </div>
+
+                    <div class="category-option-item">
+
+                        <input type="radio" class="category-menu-radio" name="rdoPrice" id="rdo3">
+                        <label class="category-menu-label" for="rdo3">Từ 2,000,000₫ - 3,000,000₫</label><br>
+                    </div>
+                    <div class="category-option-item">
+
+                        <input type="radio" class="category-menu-radio" name="rdoPrice" id="rdo4">
+                        <label class="category-menu-label" for="rdo4">Từ 3,000,000₫ - 4,000,000₫</label><br>
+
+                    </div>
+                    <div class="category-option-item">
+                        <input type="radio" class="category-menu-radio" name="rdoPrice" id="rdo5">
+                        <label class="category-menu-label" for="rdo5">Từ 4,000,000₫ - 5,000,000₫</label><br>
+                    </div>
+
+                </div>
+                <div class="category-product">
+                </div>
+        </section>
     </div>
+
+
     <footer>
         <div class="container">
             <div class="footer">
@@ -216,6 +272,8 @@
             </div>
         </div>
     </footer>
+    <script src="./Script/category.js" type="text/javascript"></script>
+    <script src="./Script/main.js" type="text/javascript"></script>
 </body>
 
 </html>
