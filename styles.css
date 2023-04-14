@@ -593,4 +593,52 @@ input {
   color: red;
 }
 
+.category {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 1rem 20rem;
+}
+.category-menu {
+  width: calc(25% - 2rem);
+  margin-right: 2rem;
+}
+.category-menu-title {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  border-radius: 1rem;
+}
+.category-menu-list {
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.category-menu-item {
+  padding-bottom: 1rem;
+}
+.category-menu-icon {
+  transition: all 0.25s linear;
+}
+.category-menu-option {
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.category-option-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.category-product {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=styles.css.map */
