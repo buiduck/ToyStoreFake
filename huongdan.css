@@ -294,7 +294,7 @@ b{
     display: none;
     min-width: 100px;
     background-color: #e8e8e8b5;
-    box-shadow: 0 0 6px;
+    box-shadow: 0 0 4px;
 
 }
 .subnav1 li a:hover{
