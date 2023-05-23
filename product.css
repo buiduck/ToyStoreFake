@@ -506,6 +506,9 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     color: #fff;
 }
+.botchat a{
+    color: #fff;
+}
 .mychat{
     color: #fff;
     background-color: #93C1DC; 
