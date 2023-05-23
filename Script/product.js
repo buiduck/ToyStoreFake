@@ -39,7 +39,6 @@ function updateImageMainByIndex(index){
     listimg.forEach(item=>{
         item.classList.remove('active');
     })
-let handleImg1 = () =>{
     var imageindex=listimg[index].getAttribute('src');
     currentIndex=index;
     imgMain.src=imageindex;
@@ -57,10 +56,7 @@ btnPrev.addEventListener('click',()=>{
     }
     else{
         currentIndex--;
-    let srcImg=img.src;
-    document.getElementById('imgMain').src=srcImg;
     }
-let handleImg4 = () =>{
     updateImageMainByIndex(currentIndex);
 })
 btnNext.addEventListener('click',()=>{
@@ -92,7 +88,6 @@ imgMain.addEventListener('mouseleave',function(e){
 
 
 const showDiv =document.querySelector('.loadmore');
-    let srcImg=img.src;
 const hideBtn =document.querySelector('#btnLoadMore');
 console.log(hideBtn);
     btnLoadMore.onclick= function() {
