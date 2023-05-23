@@ -11,7 +11,7 @@ let handlePlus = () =>{
 }
 //xu li dau tru
 let handleMinus = () =>{
-    if(quantity>1)
+    if(quantity>1)//neu ma so luong lon hon 1 thi giam
     {
         quantity--;
         render(quantity);
@@ -29,45 +29,74 @@ quantityElement.addEventListener('input',() =>{
 let handleAddToCart = ()=>{
     alert("Them thanh cong");
 }
-//anh
-let handleImg1 = () =>{
-    let img =document.getElementById('anh1');
-    let srcImg=img.src;
-    document.getElementById('imgMain').src=srcImg;
+var imgMain=document.querySelector('#imgMain');
+var listimg=document.querySelectorAll('.productpage-content-legt-smallimg img');//laydanhsachanh
+var btnPrev=document.querySelector('.controlprev')
+var btnNext=document.querySelector('.controlnext')
+var currentIndex=0;
+var mirror=document.querySelector('#mirror')
+function updateImageMainByIndex(index){
+    listimg.forEach(item=>{
+        item.classList.remove('active');
+    })
+    var imageindex=listimg[index].getAttribute('src');
+    currentIndex=index;
+    imgMain.src=imageindex;
+    listimg[index].classList.add('active');
+    mirror.style.backgroundImage = "url("+imageindex+")";//chuyen anh vao guong
 }
-let handleImg2 = () =>{
-    let img =document.getElementById('anh2');
-    let srcImg=img.src;
-    document.getElementById('imgMain').src=srcImg;
-}
-let handleImg3 = () =>{
-    let img =document.getElementById('anh3');
-    let srcImg=img.src;
-    document.getElementById('imgMain').src=srcImg;
-}
-let handleImg4 = () =>{
-    let img =document.getElementById('anh4');
-    let srcImg=img.src;
-    document.getElementById('imgMain').src=srcImg;
-}
-let handleImg5 = () =>{
-    let img =document.getElementById('anh5');
-    let srcImg=img.src;
-    document.getElementById('imgMain').src=srcImg;
-}
-const btnLoadMore = document.getElementById("btnLoadMore");
-    btnLoadMore.addEventListener("click", function() {
-        const loadmore = document.querySelector(".loadmore");
-        loadmore.classList.add("show");
-        // const collapse =document.querySelector(".collapse");
-        // console.log(collapse);
-        // collapse.classList.add("unshow");
-    });
-const btnUnMore = document.getElementById("btnUnMore");
-    btnUnMore.addEventListener("click", function() {
-        const loadmore = document.querySelector(".loadmore");
-        loadmore.classList.add("unshow");
-        // const collapse =document.querySelector(".collapse");
-        // console.log(collapse);
-        // collapse.classList.add("unshow");
-    });
+listimg.forEach((imgElement,index)=>{
+    imgElement.addEventListener('mouseover',e=>{
+        updateImageMainByIndex(index);
+    })
+})
+btnPrev.addEventListener('click',()=>{
+    if(currentIndex==0){
+        currentIndex=listimg.length-1;
+    }
+    else{
+        currentIndex--;
+    }
+    updateImageMainByIndex(currentIndex);
+})
+btnNext.addEventListener('click',()=>{
+    if(currentIndex==(listimg.length-1)){
+        currentIndex=0;
+    }
+    else
+    currentIndex++;
+    updateImageMainByIndex(currentIndex);
+})
+var mirror=document.querySelector('#mirror')
+    imgMain.addEventListener('mousemove',function(e){
+        mirror.style.display='block'
+    let w=this.offsetWidth;
+    let h=this.offsetHeight;
+
+    //vi tri cua anh so voi phan tu cha
+    let mouseWidthBorderX=e.offsetX;
+    let mouseHeightBorderY=e.offsetY;
+      
+    let percentMoseByW =(mouseWidthBorderX/w)*100;
+    let percentMoseByH =(mouseHeightBorderY/h)*100;
+    mirror.style.backgroundPosition=percentMoseByW+'%'+ percentMoseByH +'%';
+  
+})
+imgMain.addEventListener('mouseleave',function(e){
+    mirror.style.display='none'
+})
+
+
+const showDiv =document.querySelector('.loadmore');
+const hideBtn =document.querySelector('#btnLoadMore');
+console.log(hideBtn);
+    btnLoadMore.onclick= function() {
+        showDiv.style.display ='block';
+        hideBtn.style.display ='none';
+    };
+    btnUnShow.onclick =function(){
+        showDiv.style.display ='none';
+        console.log(showDiv);
+        hideBtn.style.display ='flex';
+    }
+
