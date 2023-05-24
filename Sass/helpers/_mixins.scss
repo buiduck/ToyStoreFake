@@ -55,7 +55,7 @@
 }
 
 //Giới hạn số dòng text
-@mixin textClamp($line:1, $width:100%) {
+@mixin textClamp($line: 1, $width: 100%) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line;
@@ -67,7 +67,7 @@
 }
 
 
-@mixin TouchSlider($width:80%, $gap:2.5rem, $padding:1rem) {
+@mixin TouchSlider($width: 80%, $gap: 2.5rem, $padding: 1rem) {
 
   display: grid !important;
   justify-content: flex-start !important;
@@ -91,7 +91,7 @@
   }
 }
 
-@mixin HoverEffect($itemClass, $subClass, $transform:"true") {
+@mixin HoverEffect($itemClass, $subClass, $transform: "true") {
   #{$itemClass} {
     position: relative;
     z-index: 1;

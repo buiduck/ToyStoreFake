@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .category 
 {
     @include flexbox();
@@ -16,10 +17,27 @@
     }
     &-menu-list 
     {
+=======
+.category {
+    @include flexbox();
+    padding: 1rem 20rem;
+    &-menu {
+        width: calc(25% - 2rem);
+        margin-right: 2rem;
+    }
+    &-menu-title {
+        padding: 1rem 2rem;
+        @include flexbox(center, space-between);
+        border: 1px solid rgba(0, 0, 0, 0.096);
+        border-radius: 1rem;
+    }
+    &-menu-list {
+>>>>>>> page/category
         padding: 1rem 2rem;
         border: 1px solid rgba(0, 0, 0, 0.096);
         border-radius: 1rem;
         margin: 1rem 0;
+<<<<<<< HEAD
 
 
     }
@@ -33,17 +51,39 @@
     }
     &-menu-option 
     {
+=======
+    }
+    &-menu-item {
+        padding-bottom: 1rem;
+    }
+    &-menu-icon {
+        transition: all 0.25s linear;
+    }
+    &-menu-option {
+>>>>>>> page/category
         padding: 1rem 2rem;
         border: 1px solid rgba(0, 0, 0, 0.096);
         border-radius: 1rem;
         margin: 1rem 0;
     }
+<<<<<<< HEAD
     &-option-item 
     {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 
+    &-product 
+    {
+        background-color: blue;
+        
+    }
+}
+=======
+    &-option-item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
     &-product 
     {
         width: 75%;
@@ -74,3 +114,4 @@
         }
     }
 }
+>>>>>>> page/category
