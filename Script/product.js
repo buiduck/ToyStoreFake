@@ -25,10 +25,9 @@ quantityElement.addEventListener('input',() =>{
     }
     render(quantity);
 });
+console.log(render(quantity))
 // add ro hang
-let handleAddToCart = ()=>{
-    alert("Them thanh cong");
-}
+
 var imgMain=document.querySelector('#imgMain');
 var listimg=document.querySelectorAll('.productpage-content-legt-smallimg img');//laydanhsachanh
 var btnPrev=document.querySelector('.controlprev')
@@ -99,4 +98,5 @@ console.log(hideBtn);
         console.log(showDiv);
         hideBtn.style.display ='flex';
     }
+
 
