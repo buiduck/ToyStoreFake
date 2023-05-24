@@ -1,0 +1,175 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.review .container .box-body .box-logo img{
+    display: flex;
+    align-items: center;
+}
+.review .container .box-body .background{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./Images/slider4.jpg);
+    backdrop-filter: blur(5px);
+    height: 60rem;
+    color:#ffffff;
+}
+.review .container .box-body .background h2{
+    margin: 2rem 0rem 3rem;
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(28, 180, 236), rgb(221, 10, 179));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: rgba(255, 255, 255, 0.01); /* Màu nền mờ (ở đây là màu trắng với độ trong suốt 0.5) */
+    backdrop-filter: blur(10px); /* Đặt mức độ mờ (10px là giá trị ví dụ) */
+    opacity: 0.8; /* Đặt độ mờ tổng thể */
+}
+
+.review .container .box-body .background label{
+        width: 60rem;
+        text-align: center;
+        font-size: 40px;
+        background-color: rgba(255, 255, 255, 0.01); /* Màu nền mờ (ở đây là màu trắng với độ trong suốt 0.5) */
+    backdrop-filter: blur(10px); /* Đặt mức độ mờ (10px là giá trị ví dụ) */
+    opacity: 0.8; /* Đặt độ mờ tổng thể */
+  
+}
+.review .container .box-body .box-review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0e5e5;
+    padding:5rem 0;
+}
+.review .container .box-body .box-review .infor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 15px;
+    width: 20rem;
+    margin: 1rem 0;
+}
+.review .container .box-body .box-review .infor img{
+    margin: 1rem;
+    height: 5rem;
+}
+.review .container .box-body .box-review .infor label{
+    margin: 1rem;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    height: 5rem;
+}
+.review .container .box-body .box-review .infor h2{
+    margin: 1rem;
+    text-align: center;
+    font-size: 25px;
+    height: 10rem;
+}
+.review .container .box-body .box-review1 {
+    padding: 0 0 5rem;
+
+}
+.review .container .box-body .box-review1 .box-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    padding:4rem 0 0;
+
+}
+.review .container .box-body .box-review1 .box-title .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 30rem;
+    background-color: rgb(249, 128, 85);
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 17px;
+    margin: 1rem;
+}
+.review .container .box-body .box-review1 .box-title label{
+    font-size: 30px;
+    margin: 2rem;
+}
+.review .container .box-body .box-review1 .box-infor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+
+}
+.review .container .box-body .box-review1 .box-infor img{
+   width: 50rem;
+   margin-right: 5rem;
+}
+.review .container .box-body .box-review1 .box-infor p{
+    width: 45rem;
+    margin-left: 5rem;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 1px;
+ }
+ .review .container .box-body .box-review2{
+    margin: 4rem 0 0;
+    background: #f0e5e5;
+    padding:5rem 0 0;
+}
+.review .container .box-body .box-review2 .box-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.review .container .box-body .box-review2 .box-title label{
+    font-size: 30px;
+    margin: 2rem;
+}
+.review .container .box-body .box-review2 .box-title .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 30rem;
+    background-color: rgb(249, 128, 85);
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 17px;
+    margin: 1rem;
+}
+  .review .container .box-body .box-review2 .information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0e5e5;
+    padding:5rem 15rem;
+}
+
+.review .container .box-body .box-review2 .information div{
+    margin: 2rem 5rem;
+    width: 37rem;
+    height: 57rem;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(165, 165, 155);
+}
+.review .container .box-body .box-review2 .information div label{
+    font-size: 22px;
+}
+.review .container .box-body .box-review2 .information div img{
+    margin: 0 0 2rem;;
+}
+.review .container .box-body .box-review2 .information div p{
+    line-height: 27px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 1rem 3rem;
+}
