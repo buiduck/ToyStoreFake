@@ -180,11 +180,11 @@ html {
     padding-left: 0.5rem;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.25s linear;
+   
   }
   .menu-link {
     cursor: pointer;
-    transition: all 0.25s linear;
+   
   }
   .menu-item:hover {
     position: relative;
@@ -208,11 +208,11 @@ html {
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.25s linear;
+   
   }
   .menu-sub-link {
     color: black;
-    transition: all 0.25s linear;
+   
   }
   .menu-sub-item {
     padding: 1rem 1.5rem;
@@ -295,34 +295,28 @@ b{
     min-width: 100px;
     background-color: #e8e8e8b5;
     box-shadow: 0 0 4px;
-
-}
-.subnav1 li a:hover{
-    margin-left: 0;
 }
 
-#nav1>li>a{
-    color: whitesmoke;
-    text-transform: uppercase;
-}
 #nav1 li a{
     color: black;
     text-decoration: none;
     line-height: 60px;
     display: block;
     text-align: center;
+    text-transform: uppercase;
    
 }
 #nav1 li:hover .subnav1 {
     display: block;   
-     
+   
   }
 
 #nav1 > li:hover > a,
 #nav1 .subnav1 li:hover a{
    cursor: pointer;
    color: rgba(143, 19, 174, 0.837);
- 
+
+  
 }
 #nav1 .nav1-arrow-down{
     font-size: 12px;
