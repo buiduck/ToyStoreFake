@@ -130,7 +130,7 @@ html {
   .header-icon:last-child {
     position: relative;
   }
-  .header-icon:last-child::after {
+  .header-control a:last-child .header-icon::after {
     content: "0";
     width: 2rem;
     height: 2rem;

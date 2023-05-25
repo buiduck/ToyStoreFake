@@ -1,7 +1,10 @@
 html{
     font-family: 'Courier New', Courier, monospace;
 }
-
+.wrapper 
+{
+    background-color: #fff;
+}
 .review .container .box-body .box-logo img{
     display: flex;
     align-items: center;
@@ -11,7 +14,7 @@ html{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-image: url(./Images/slider4.jpg);
+    background-image: url(./Images/slider2.jpg);
     backdrop-filter: blur(5px);
     height: 60rem;
     color:#ffffff;
@@ -41,7 +44,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f0e5e5;
+    background: #eff0f5;
     padding:5rem 0;
 }
 .review .container .box-body .box-review .infor{
@@ -95,6 +98,12 @@ html{
     font-size: 17px;
     margin: 1rem;
 }
+.review .container .box-body .box-review1 .box-title .title span{
+    text-transform: uppercase;
+    display: block;
+    padding: 2rem;
+    
+}
 .review .container .box-body .box-review1 .box-title label{
     font-size: 30px;
     margin: 2rem;
@@ -119,7 +128,7 @@ html{
  }
  .review .container .box-body .box-review2{
     margin: 4rem 0 0;
-    background: #f0e5e5;
+    background: #eff0f5;
     padding:5rem 0 0;
 }
 .review .container .box-body .box-review2 .box-title{
@@ -150,7 +159,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f0e5e5;
+    background: #eff0f5;
     padding:5rem 15rem;
 }
 
