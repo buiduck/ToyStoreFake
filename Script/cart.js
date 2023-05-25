@@ -129,3 +129,17 @@ function tintongtienthanhtoan() {
 }
 
 
+// Sử dụng querySelectorAll để tìm tất cả các phần tử có lớp "header-control"
+var headerControlElements = document.querySelectorAll('.header-control');
+
+// Duyệt qua từng phần tử
+headerControlElements.forEach(function(element) {
+  // Sử dụng querySelector để tìm phần tử cuối cùng có lớp "header-icon" bên trong phần tử hiện tại
+  var lastHeaderIcon = element.querySelector('.header-icon:last-child');
+  
+  // Kiểm tra xem phần tử cuối cùng có tồn tại hay không trước khi thêm quy tắc CSS
+  if (lastHeaderIcon) {
+    // Thêm quy tắc CSS cho phần tử cuối cùng
+    lastHeaderIcon.style.property = 'value';
+  }
+});
