@@ -146,6 +146,27 @@ i {
   font-weight: bold;
   margin-left: 3rem;
 }
+.header .header-icon:last-child {
+  position: relative;
+}
+.header-control a:last-child .header-icon::after {
+  content: "0";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: white;
+  background-color: #58b3f0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -20%);
+}
 .header-icon:hover {
   color: #58b3f0;
 }
