@@ -345,9 +345,7 @@ margin-bottom: 20px;
     font-size: 17px;
     font-weight: bold;
     background: transparent;
-    position: relative;
     transition: all 1s;
-    overflow: hidden;
     width: 100%;
     margin-bottom: 15px;
   }
@@ -357,22 +355,7 @@ margin-bottom: 20px;
     background-color: rgba(134, 14, 147, 0.9);
   }
   
-  .btn-tt::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: -40px;
-    transform: skewX(45deg);
-    background-color: purple;
-    z-index: -1;
-    transition: all 1s;
-  }
   
-  .btn-tt:hover::before {
-    width: 160%;
-  }
   .link-connection{
     margin: 10px 0 0;
     text-align: center;
